@@ -12,7 +12,7 @@
 </template>
 <script>
 import Swiper from 'swiper';
-import 'swiper/dist/css/swiper.min.css'
+import 'swiper/dist/css/swiper.css'
 export default {
     name:'swiper',
     props:{
@@ -25,7 +25,7 @@ export default {
     mounted(){
         new Swiper('.swiper-container', {
             slidesPerView: 1,
-            spaceBetween: 1,
+            spaceBetween: 0,
             loop: true,
             pagination: {
                 el: '.swiper-pagination',
