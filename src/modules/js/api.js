@@ -9,7 +9,11 @@ let url={
     deal:'goods/deal',
     evaluation:'goods/evaluation',
     addCart:'cart/add',
-    
+    updateCart:'cart/update',
+    listCart:'cart/list',
+    reduceCart:'cart/reduce',
+    removeCart:'cart/remove',
+    mrremoveCart:'cart/mrremove',
 }
 
 let host='http://rap2api.taobao.org/app/mock/7058/'    
