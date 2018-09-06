@@ -159,9 +159,9 @@
               <a class="js-show-more-btn icon show-more-btn hide"></a>
             </div>
           </div> -->
-          <div id="right-icon" class="js-right-icon ">
+          <div id="right-icon" class="js-right-icon " v-show='isAddCart'>
             <div class="js-right-icon-container right-icon-container clearfix">
-              <a id="global-cart" href="https://h5.youzan.com/v2/trade/cart?kdt_id=16546132" class="icon new s0" style="">
+              <a id="global-cart" :href='"cart.html?"+id' class="icon new s0" >
                 <p class="icon-img"></p>
                 <p class="icon-txt">购物车</p>
               </a>
@@ -177,7 +177,7 @@
                 <li class="js-goods-card goods-card small-pic card ">
                   <a href="https://h5.youzan.com/v2/goods/2ov83y79gkn38" class="js-goods link clearfix" target="_blank" data-goods-id="343086880" title="【28号陆续发货】寻找田野|青海有机鲜枸杞 营养价值高安全无农残 吃水果一样吃枸杞">
                     <div class="photo-block" data-width="750" data-height="750" style="background-color: rgb(255, 255, 255);">
-                      <img class="goods-photo js-goods-lazy" data-src="https://img.yzcdn.cn/upload_files/2017/07/11/FoN0SazpvslhoiiyuHETeyWHqzTE.jpg?imageView2/2/w/280/h/280/q/75/format/webp" src="https://img.yzcdn.cn/upload_files/2017/07/11/FoN0SazpvslhoiiyuHETeyWHqzTE.jpg?imageView2/2/w/280/h/280/q/75/format/webp" style="">
+                      <img class="goods-photo js-goods-lazy" data-src="https://img.yzcdn.cn/upload_files/2017/07/11/FoN0SazpvslhoiiyuHETeyWHqzTE.jpg?imageView2/2/w/280/h/280/q/75/format/webp" src="https://img.yzcdn.cn/upload_files/2017/07/11/FoN0SazpvslhoiiyuHETeyWHqzTE.jpg?imageView2/2/w/280/h/280/q/75/format/webp" >
                     </div>
                     <div class="info clearfix info-title info-price btn0">
                       <p class=" goods-title ">【28号陆续发货】寻找田野|青海有机鲜枸杞 营养价值高安全无农残 吃水果一样吃枸杞</p>
@@ -247,7 +247,7 @@
     </transition>
     <!-- 确认规格弹窗 popout -->
     <transition name='appear'>
-      <div id="QfEqtDbeK9" class="sku-layout sku-box-shadow popup" style="overflow: hidden; position: absolute; z-index: 1000; background: white;
+      <div id="QfEqtDbeK9" class="sku-layout sku-box-shadow popup" style="overflow: hidden; position: fixed; z-index: 1000; background: white;
       bottom: 0px; left: 0px; right: 0px; visibility: visible; " 
       v-show='showSku'>
         <div class="sku-layout-title name-card sku-name-card">
@@ -311,23 +311,24 @@
           <!-- <div class="bottom-padding"></div> -->
           <div class="confirm-action content-foot clearfix">
             <!-- 加入购物车 -->
-            <div class="big-btn-1-1" style="display: none;" v-show='skuType===2'>
+            <div class="big-btn-1-1" style="display: none;" v-show='skuType===2'  @click='addCart'>
               <a href="javascript:;" class="js-confirm-it big-btn red-btn main-btn">加入购物车</a>
             </div>
             <!-- 立即购买 -->
-            <div class="big-btn-1-1" v-show='skuType===3'>
+            <div class="big-btn-1-1" v-show='skuType===3' >
               <a href="javascript:;" class="js-confirm-it big-btn red-btn main-btn">下一步</a>
             </div>
             <!-- 选择规格 -->
             <div class="big-btn-2-1" v-show='skuType===1'>
-              <a href="javascript:;" class="js-mutiBtn-confirm cart big-btn orange-btn vice-btn">加入购物车</a>
+              <a href="javascript:;" class="js-mutiBtn-confirm cart big-btn orange-btn vice-btn" @click='addCart'>加入购物车</a>
               <a href="javascript:;" class="js-mutiBtn-confirm confirm big-btn red-btn main-btn">立即购买</a>
             </div>
           </div>
         </div>
       </div>
     </transition>
-    <div class="motify" style="display: none;">
+
+    <div class="motify" v-show='showAddMessage'>
       <div class="motify-inner">已成功添加到购物车</div>
     </div>
   </div>

@@ -8,6 +8,8 @@ let url={
     details:'goods/details',
     deal:'goods/deal',
     evaluation:'goods/evaluation',
+    addCart:'cart/add',
+    
 }
 
 let host='http://rap2api.taobao.org/app/mock/7058/'    

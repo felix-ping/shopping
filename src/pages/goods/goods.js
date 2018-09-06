@@ -17,6 +17,7 @@ let {id}=qs.parse(location.search.substr(1))
 new Vue({
     el:'#app',
     data:{
+        id,
         detailsList:null,
         tabIndex:0,
         tabDetails:['商品详情','本店成交'],
@@ -26,6 +27,8 @@ new Vue({
         showSku:false,
         skuNum:1,
         totalSku:10,
+        isAddCart:false,
+        showAddMessage:false,
 
     },
     created(){
@@ -71,6 +74,21 @@ new Vue({
             
             
         },
+        addCart(){
+            axios.post(url.addCart,{
+                id,
+                number:this.skuNum
+            }).then(res=>{
+                if(res.data.status===200){
+                    this.showSku=false
+                    this.isAddCart=true
+                    this.showAddMessage=true
+                    setTimeout(() =>{   
+                        this.showAddMessage=false
+                     },1000)
+                }
+            })
+        }
     },
     watch:{
         showSku(val,oldVal){
