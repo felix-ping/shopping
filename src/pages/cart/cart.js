@@ -10,7 +10,9 @@ import mixin from 'js/mixin.js'
 new Vue({
     el:'#app',
     data:{
-        cartList:null
+        cartList:null,
+        total:0,
+        counter:0,
     },
     created(){
         this.getListCart()
@@ -31,10 +33,61 @@ new Vue({
             )
             
         },
-        selectGood(good){
+        selectGood(shop,good){
             good.checked=!good.checked
+            shop.checked=shop.goodsList.every(good=>{
+                return good.checked
+            })
+        },
+        selectShop(shop){
+            shop.checked=!shop.checked
+            shop.goodsList.forEach(good=>{
+                good.checked=shop.checked
+            })
+        },
+        selectEvery(){
+            this.selectAll=!this.selectAll
         }
     },
     mixins:[mixin],
-    computed:{}
+    computed:{
+        selectAll: {
+            get(){
+                if(this.cartList&&this.cartList.length){
+                    return this.cartList.every(shop=>{
+                        return shop.checked
+                    })
+                }
+              
+            },
+            set(newVal){
+                this.cartList.forEach(shop=>{
+                    shop.checked=newVal
+                    shop.goodsList.forEach(good=>{
+                        good.checked=newVal
+                    })
+                })
+            }
+        },
+        selectCounter(){
+            if(this.cartList&&this.cartList.length){
+                let arr=[];
+                let total=0;
+                this.cartList.forEach(shop=>{
+                    shop.goodsList.forEach(good=>{
+                        if(good.checked){
+                            total+=good.price*good.number
+                            arr.push(good) 
+                        }                        
+                    })
+                })
+                this.total=total
+                this.counter=arr.length
+                return arr
+            }
+            return []
+        }
+
+    }
 })
+//为什么必须点击devtool才会显示商品的总价,computed属性到底什么时候会被调用?
