@@ -1,2 +1,2 @@
-import './member_base.css';
-import './member.css';
+import './components/member_base.css';
+import './components/member.css';
