@@ -48,6 +48,9 @@
                     <li class="block-item block-item-cart " 
                     v-for='(good,goodIndex) in shop.goodsList' :key ='good.id'
                     :class='{editing:shop.editing}'
+                    :ref='"goods-"+shopIndex+"-"+goodIndex'
+                    @touchstart='start($event,good)'
+                    @touchend='end($event,shopIndex,good,goodIndex)'
                     >
                       <div>
                         <div class="check-container" @click='selectGood(shop,good)'>
@@ -82,7 +85,7 @@
                           </div>
                           <div class="error-box"></div>
                         </div>
-                        <div class="delete-btn"><span>删除</span></div>
+                        <div class="delete-btn" @click='removeSingle(shop,shopIndex,good,goodIndex)'><span>删除</span></div>
                       </div>
                     </li>
                     
@@ -146,10 +149,32 @@
                   结算 ({{counter}})
                 </button>
                 <!-- 编辑状态 -->
-                <button href="javascript:;" :disabled="!removeLists.length" class="j-delete-goods btn font-size-14 btn-red" v-show='editingShop'>删除
-                      </button>
+                <button href="javascript:;" :disabled="!removeLists.length" class="j-delete-goods btn font-size-14 btn-red" 
+                  v-show='editingShop'>删除
+                 </button>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div v-show='removePopUp' style="position:relative">
+        <div id="yFzBKP9GDL" style="height: 100%; position: fixed; top: 0px; left: 0px; right: 0px; background-color: rgba(0, 0, 0, 0.7);
+              z-index: 1000;transition:none 0.2 ease ;opacity: 1;overflow:hidden; ">
+        </div>
+        <div id="RKinAL9BX5" class="popout-confirm popout-box" style="overflow:hidden;position: fixed;z-index:1000;
+              transition:opacity 300ms ease;top:50%;left:50%;margin-left: -135px;margin-top: -38px;
+              visibility:visible;border-radius:4px;background: #fff;width:270px;padding:15px;opacity: 1;">
+          <div class="confirm-content font-size-14" style="line-height:20px;padding:5px 5px 10px">
+            确定要删除商品吗?
+          </div>
+          <hr style="margin:9px -15px 10px">
+
+          <div class="btn-2-1">
+            <p class="js-cancel center font-size-16" style="padding-top:5px; " @click='removeCancle'>取消</p>
+          </div>
+          <span style="padding:5px 0px; border-right:1px solid #999"></span>
+          <div class="btn-2-1">
+            <p class="js-ok center c-green font-size-16" style="padding-top:5px;" @click='removeConfirm'>确定</p>
           </div>
         </div>
       </div>
@@ -159,6 +184,7 @@
         <div class="ft-copyright " style="background-image: url(https://img.yzcdn.cn/upload_files/2016/11/15/147918630760182374.png);">
           <a class="yz-logo" href="https://www.youzan.com/?from_source=support_logo">有赞提供技术支持</a> </div>
       </div>
+        
     </div>
 </div>
 </body>
