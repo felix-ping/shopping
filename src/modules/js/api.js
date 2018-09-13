@@ -14,6 +14,11 @@ let url={
     reduceCart:'cart/reduce',
     removeCart:'cart/remove',
     mrremoveCart:'cart/mrremove',
+    addressSetdefault:'address/setDefault',
+    addressUpdate:'address/update',
+    addressList:'address/list',
+    addressRemove:'address/remove',
+    addressAdd:'address/add',
 }
 
 let host='http://rap2api.taobao.org/app/mock/7058/'    
