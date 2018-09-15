@@ -33,40 +33,56 @@ export default{
       this.address=addr.address;
     }
   },
+  computed:{
+    lists(){
+      return this.$store.state.lists
+    }
+  },
   methods:{
     //这里需要进行非空和合法性校验
     save(){
       let {name,tel,provinceValue,cityValue,districtValue,address}=this
       let data={name,tel,provinceValue,cityValue,districtValue,address}
       if(this.type==='add'){
-        Address.add(data).then(res=>{
-          this.$router.go(-1)
-        })
+        // Address.add(data).then(res=>{
+        //   this.$router.go(-1)})
+        this.$store.dispatch('addAction',data)
+        
       }
       if(this.type==='edit'){
         //这里容易遗漏
         data.id=this.id 
         console.log(data.id)
-        Address.update(data).then(res=>{
-          this.$router.go(-1)
-        })
+        // Address.update(data).then(res=>{
+        //   this.$router.go(-1)
+        // })
+        this.$store.dispatch('updateAction',data)
       }
     },
     //这里应该trick.
     remove(){
       if(window.confirm('是否删除?')){
-        Address.remove(this.id).then(res=>{
-          this.$router.go(-1)
-        })
+        // Address.remove(this.id).then(res=>{
+        //   this.$router.go(-1)
+        // })
+        this.$store.dispatch('removeAction',this.id)
       }
     },
     setDefault(){
-      Address.setdefault(this.id).then(res=>{
-        this.$router.go(-1)
-      })
+      // Address.setdefault(this.id).then(res=>{
+      //   this.$router.go(-1)
+      // })
+      this.$store.dispatch('setDefaultAction',this.id)
     },
   },
   watch:{
+    lists:{
+      handler(){
+        this.$router.go(-1)
+      },
+      deep:true,
+      
+    },
     provinceValue(val){
       if(val==='-1'){
         console.log(-1,val)
@@ -80,17 +96,17 @@ export default{
       })
       this.cityList=list[index].children
       this.cityValue=-1
-      this.districtValue=-1
+      this.districtValue=-1;
 
       if(this.type==='edit'){
-        this.cityValue=parseInt(this.instance.cityValue)
+        this.cityValue=parseInt(this.instance.cityValue);
         
         this.districtValue=-1
       }
     },
     cityValue(val){
       if(val==='-1'){return}
-      let list=this.cityList
+      let list=this.cityList;
       let index=list.findIndex(item=>{
         return item.value===val
       })

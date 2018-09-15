@@ -1,6 +1,7 @@
 <template>
   <div class="container " style="min-height: 597px;">
     <div class="block-list address-list section section-first js-no-webview-block" v-if='lists&&lists.length'  >
+      <!-- 这里少了默认地址的标识 -->
       <a class="block-item js-address-item address-item " 
       v-for='list in lists' 
       :key='list.id'
@@ -24,17 +25,26 @@
 
 </style>
 <script>
-import Address from 'js/addressService.js';
+// import Address from 'js/addressService.js';
 export default {
-  data(){
-    return {
-      lists:null,
+  // data(){
+  //   return {
+  //     lists:null,
+  //   }
+  // },
+  computed:{
+    lists(){
+      return this.$store.state.lists
     }
   },
   created(){
-    Address.list().then(res=>{
-      this.lists=res.data.lists
-    })
+    // Address.list().then(res=>{
+    //   this.lists=res.data.lists
+    // })
+    if(!this.lists){
+      this.$store.dispatch('getLists')
+    }
+    
   },
   methods:{
     toEdit(list){
