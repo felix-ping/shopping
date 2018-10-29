@@ -85,14 +85,13 @@ new Vue({
 					this.showAddMessage=true
 					setTimeout(() =>{   
 						this.showAddMessage=false
-					 },1000)
+					},1000)
 				}
 			})
 		}
 	},
 	watch:{
 		showSku(val,oldVal){
-		   
 			if(val){
 				document.body.style.overflow='hidden'
 				document.querySelector('html').style.overflow='hidden'
