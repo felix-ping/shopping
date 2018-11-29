@@ -2,7 +2,7 @@
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swp-page swiper-slide" v-for='list in lists' :key='list.id'> 
-            <a class="js-no-follow" :href='list.clickUrl'>
+            <a class="js-no-follow" :href='"goods.html?id="+list.id'>
                 <img class="goods-main-photo fadeIn" :src='list.img'>
             </a>
             </div>

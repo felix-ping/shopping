@@ -114,14 +114,17 @@
     "banner":{
       "lists": [
         {
+          "id": 55677,
           "clickUrl": "prospero://hsdzj.fj/sghnif",
           "img": "http://dummyimage.com/375x180/f27979"
         },
         {
+          "id": 55377,
           "clickUrl": "rlogin://lskjh.lu/xmnimfd",
           "img": "http://dummyimage.com/375x180/799cf2"
         },
         {
+          "id": 11677,
           "clickUrl": "nntp://whmlajaj.io/pfsjrmv",
           "img": "http://dummyimage.com/375x180/c0f279"
         }

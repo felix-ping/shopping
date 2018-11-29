@@ -50,6 +50,7 @@ let app=new Vue({
         getBanner(){
             this.$http.get('static/data.json').then(res=>{
                 this.bannerLists=res.data.index.banner.lists 
+                console.log(this.bannerLists)
             })
         }
     },
