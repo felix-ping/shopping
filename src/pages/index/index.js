@@ -3,8 +3,8 @@ import './index.css';
 import Vue from 'vue';
 import url from 'js/api.js';
 import axios from 'axios';
-import { InfiniteScroll } from 'mint-ui';
-Vue.use(InfiniteScroll);
+// import { InfiniteScroll } from 'mint-ui';
+// Vue.use(InfiniteScroll);
 
 // import Foot from 'components/Foot.vue';
 import Swiper from 'components/Swiper.vue';
