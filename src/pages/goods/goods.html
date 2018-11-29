@@ -13,6 +13,11 @@
   <link rel="shortcut icon" href="https://b.yzcdn.cn/v2/image/yz_fc.ico">
   <title>商品详情</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <style>
+    [v-cloak]{
+      display: none;
+    }
+  </style>
   <!-- <link rel="stylesheet" href="./css/goods_common.css">
   <link rel="stylesheet" href="./css/goods_custom.css">
   <link rel="stylesheet" href="./css/goods.css">
@@ -22,7 +27,7 @@
 </head>
 
 <body class=" body-fixed-bottom default-theme">
-  <div id="app" v-if='detailsList'>
+  <div id="app" v-if='detailsList' v-cloak>
     <div class="container wap-goods internal-purchase" style="min-height: 617px;">
       <div class="content no-sidebar">
         <div class="content-body">

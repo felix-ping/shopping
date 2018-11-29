@@ -23,7 +23,8 @@ new Vue({
     methods:{
         getSearchLists(){
             this.$http.get('static/data.json').then(res=>{
-                this.searchList=res.data.search.lists
+                console.log(res)
+                this.searchList=res.data.search.list.lists
             })
         },
         moveEvent(){

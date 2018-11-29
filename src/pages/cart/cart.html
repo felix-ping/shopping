@@ -13,13 +13,18 @@
   <link rel="shortcut icon" href="https://b.yzcdn.cn/v2/image/yz_fc.ico">
   <title>购物车</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <style>
+    [v-cloak]{
+      display: none;
+    }
+  </style>
   <!-- <link rel="stylesheet" href="./css/cart_base.css">
   <link rel="stylesheet" href="./css/cart_trade.css">
   <link rel="stylesheet" href="./css/cart.css"> -->
 </head>
 
 <body class=" body-fixed-bottom" style="">
-  <div id="app">
+  <div id="app" v-cloak>
     <div class="container " style="min-height: 581px;">
       <div class="content clearfix js-page-content">
         <div id="cart-container">
