@@ -6,6 +6,8 @@ import url from 'js/api.js';
 import qs from 'qs';
 import mixin from 'js/mixin.js'
 import Velocity from 'velocity-animate';
+import VueResource from 'vue-resource';
+Vue.use(VueResource);
 
 let {keyword , id}=qs.parse(location.search.substr(1))
 new Vue({
@@ -20,8 +22,8 @@ new Vue({
     },
     methods:{
         getSearchLists(){
-            axios.post(url.searchList,{keyword,id}).then(res=>{
-                this.searchList=res.data.lists
+            this.$http.get('static/data.json').then(res=>{
+                this.searchList=res.data.search.lists
             })
         },
         moveEvent(){

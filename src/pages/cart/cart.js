@@ -8,6 +8,8 @@ import url from 'js/api.js';
 import mixin from 'js/mixin.js';
 import Velocity from 'velocity-animate';
 import Cart from 'js/cartService'
+import VueResource from 'vue-resource'
+Vue.use(VueResource)
 
 new Vue({
   el: '#app',
@@ -28,8 +30,8 @@ new Vue({
   },
   methods: {
     getListCart() {
-      axios.post(url.listCart).then(res => {
-          let lists = res.data.cartList
+      this.$http.get('static/data.json').then(res => {
+          let lists = res.data.cart.list.cartList
           lists.forEach(shop => {
             shop.checked = true
             shop.removeChecked = false
@@ -105,9 +107,7 @@ new Vue({
     },
     removeConfirm(){
       let {shop,shopIndex,good,goodIndex}=this.removeData
-      axios.post(url.removeCart,{
-        id:good.id 
-      }).then(res=>{
+      this.$http.get('static/data.json').then(res=>{
         shop.goodsList.splice(goodIndex,1)
         this.removePopUp=false
         if(!shop.goodsList.length){

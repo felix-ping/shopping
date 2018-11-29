@@ -5,6 +5,8 @@ import Vue from 'vue'
 import axios from 'axios'
 // import Foot from 'components/Foot.vue'
 import mixin from 'js/mixin.js'
+import VueResource from 'vue-resource'
+Vue.use(VueResource)
 
 new Vue({
     el:'#app',
@@ -21,8 +23,10 @@ new Vue({
     },
     methods:{
         getTopLists(){
-            axios.post(url.topList).then(res=>{
-                this.topLists=res.data.lists
+            this.$http.get('static/data.json').then(res=>{
+                console.log(res)
+                this.topLists=res.data.category.topList.lists
+                console.log(this.topLists)
             }).catch(err=>{console.log(err)})
         },
         getSubList(index,id){
@@ -30,14 +34,14 @@ new Vue({
             if(index===0){
                 this.getRank()
             }else{
-               axios.post(url.subList,{id}).then(res=>{
-                    this.listData=res.data.data   
+                this.$http.get('static/data.json').then(res=>{
+                    this.listData=res.data.category.subList.data   
                 }).catch(err=>{222,console.log(err)})
             }            
         },
         getRank(){
-            axios.post(url.rank).then(res=>{
-                this.rankData=res.data.data
+            this.$http.get('static/data.json').then(res=>{
+                this.rankData=res.data.category.rank.data
             }).catch(err=>{console.log(err)})
         },
         toSearch(list){

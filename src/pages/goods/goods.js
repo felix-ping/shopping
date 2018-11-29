@@ -39,7 +39,7 @@ new Vue({
 	methods:{
 		getDetails(){
 			this.$http.get('static/data.json').then(res=>{
-				this.detailsList=res.data.details.data
+				this.detailsList=res.data.goods.details.data
 				this.bannerLists=[]
 				this.detailsList.imgs.forEach(item=>{
 					this.bannerLists.push({
@@ -57,7 +57,7 @@ new Vue({
 		},
 		getDeal(){
 			this.$http.get('static/data.json').then(res=>{
-				this.deal=res.data.deal.data.lists
+				this.deal=res.data.goods.deal.data.lists
 			})
 		},
 		chooseSku(type){
