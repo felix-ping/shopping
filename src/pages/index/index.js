@@ -3,14 +3,14 @@ import './index.css';
 import Vue from 'vue';
 import url from 'js/api.js';
 import axios from 'axios';
-
 import { InfiniteScroll } from 'mint-ui';
 Vue.use(InfiniteScroll);
 
 // import Foot from 'components/Foot.vue';
 import Swiper from 'components/Swiper.vue';
-
 import mixin from 'js/mixin.js'
+import VueResource from 'vue-resource'
+Vue.use(VueResource)
 
 let app=new Vue({
     el:'#app',
@@ -31,11 +31,8 @@ let app=new Vue({
             if(this.allLoaded)return
             //是否在加载中
             this.loading=true
-            axios.post(url.hotLists, {
-                pageNum: this.pageNum,
-                pageSize: this.pageSize,
-            }).then((res) => {
-                let curLists=res.data.lists
+            this.$http.get('static/data.json').then((res) => {
+                let curLists=res.data.index.hotLists.lists
                 if(curLists.length<this.pageSize){
                     //判断所有数据是否加载完毕
                     this.allLoaded=true
@@ -46,15 +43,13 @@ let app=new Vue({
                     //第一次请求数据
                     this.lists = curLists    
                 }
-                
-                console.log(res, this.lists)
                 this.loading=false
                 this.pageNum++
             }).catch((err) => {});
         },
         getBanner(){
-            axios.get(url.banner).then(res=>{
-                this.bannerLists=res.data.lists 
+            this.$http.get('static/data.json').then(res=>{
+                this.bannerLists=res.data.index.banner.lists 
             })
         }
     },

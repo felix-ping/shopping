@@ -1,0 +1,629 @@
+
+{
+  "index":{
+    "hotLists":{
+      "lists": [
+        {
+          "id": 75501,
+          "img": "http://dummyimage.com/178x178/97f279",
+          "name": "强去众律电名",
+          "price": 5.92
+        },
+        {
+          "id": 88543,
+          "img": "http://dummyimage.com/178x178/f279ba",
+          "name": "能府论发管发交",
+          "price": 17.62
+        },
+        {
+          "id": 13507,
+          "img": "http://dummyimage.com/178x178/79def2",
+          "name": "去干发只际拉",
+          "price": 52.84
+        },
+        {
+          "id": 30284,
+          "img": "http://dummyimage.com/178x178/f2e279",
+          "name": "级步有无",
+          "price": 85.75
+        },
+        {
+          "id": 59152,
+          "img": "http://dummyimage.com/178x178/bf79f2",
+          "name": "条带形省中",
+          "price": 44.63
+        },
+        {
+          "id": 92133,
+          "img": "http://dummyimage.com/178x178/79f29c",
+          "name": "见世信展见备",
+          "price": 50.28
+        },{
+          "id": 78404,
+          "img": "http://dummyimage.com/178x178/d3f279",
+          "name": "么细教性",
+          "price": 49.92
+        },
+        {
+          "id": 28226,
+          "img": "http://dummyimage.com/178x178/ed79f2",
+          "name": "的走代效什论",
+          "price": 69.34
+        },
+        {
+          "id": 99717,
+          "img": "http://dummyimage.com/178x178/79f2ca",
+          "name": "亲员会米",
+          "price": 98.43
+        },
+        {
+          "id": 32661,
+          "img": "http://dummyimage.com/178x178/f2a779",
+          "name": "问员你",
+          "price": 98.45
+        },
+        {
+          "id": 70416,
+          "img": "http://dummyimage.com/178x178/8379f2",
+          "name": "然再般",
+          "price": 96.18
+        },
+        {
+          "id": 23169,
+          "img": "http://dummyimage.com/178x178/91f279",
+          "name": "存关见体",
+          "price": 74.47
+        },{
+          "id": 92758,
+          "img": "http://dummyimage.com/178x178/7997f2",
+          "name": "重院音开",
+          "price": 29.99
+        },
+        {
+          "id": 94969,
+          "img": "http://dummyimage.com/178x178/baf279",
+          "name": "以改学科住传或",
+          "price": 15.95
+        },
+        {
+          "id": 68192,
+          "img": "http://dummyimage.com/178x178/f279dd",
+          "name": "装状位例易实级",
+          "price": 45.12
+        },
+        {
+          "id": 24637,
+          "img": "http://dummyimage.com/178x178/79f2e3",
+          "name": "办与且总会命",
+          "price": 57.15
+        },
+        {
+          "id": 50953,
+          "img": "http://dummyimage.com/178x178/f2c079",
+          "name": "一界电很选",
+          "price": 96.87
+        },
+        {
+          "id": 28261,
+          "img": "http://dummyimage.com/178x178/9c79f2",
+          "name": "验好支状知",
+          "price": 83.24
+        }
+      ]
+    },
+    "banner":{
+      "lists": [
+        {
+          "clickUrl": "prospero://hsdzj.fj/sghnif",
+          "img": "http://dummyimage.com/375x180/f27979"
+        },
+        {
+          "clickUrl": "rlogin://lskjh.lu/xmnimfd",
+          "img": "http://dummyimage.com/375x180/799cf2"
+        },
+        {
+          "clickUrl": "nntp://whmlajaj.io/pfsjrmv",
+          "img": "http://dummyimage.com/375x180/c0f279"
+        }
+      ]
+    }
+  },
+  "category":{
+    "topList":{
+      "lists": [
+        {
+          "id": 800,
+          "name": "综合排行"
+        },
+        {
+          "id": 810,
+          "name": "食品酒水"
+        },
+        {
+          "id": 817,
+          "name": "女人穿着"
+        },
+        {
+          "id": 811,
+          "name": "男士穿着"
+        },
+        {
+          "id": 814,
+          "name": "箱包"
+        },
+        {
+          "id": 818,
+          "name": "首饰"
+        },
+        {
+          "id": 820,
+          "name": "数码电器"
+        },
+        {
+          "id": 822,
+          "name": "居家百货"
+        }
+      ]
+    },
+    "rank":{
+      "data": {
+        "hotGoods": [
+          {
+            "id": 1,
+            "img": "http://dummyimage.com/90x90/f279e3",
+            "name": "测试商品qZbTu",
+            "price": 89,
+            "recommend": 8844
+          },
+          {
+            "id": 2,
+            "img": "http://dummyimage.com/90x90/79f2dd",
+            "name": "测试商品BGtPG",
+            "price": 29,
+            "recommend": 5765
+          },
+          {
+            "id": 3,
+            "img": "http://dummyimage.com/90x90/f2ba79",
+            "name": "测试商品3jXw0",
+            "price": 46.8,
+            "recommend": 3770
+          }
+        ],
+        "hotKeywords": [
+          "化妆水",
+          "连衣裙",
+          "凉鞋女",
+          "面膜",
+          "防晒",
+          "蓝牙音箱",
+          "小白鞋",
+          "裤子",
+          "衬衫"
+        ],
+        "hotShops": [
+          {
+            "clickUrl": "www.baidu.com",
+            "follows": 987750,
+            "name": "幸福西饼",
+            "imgs": [
+              "http://dummyimage.com/68x68/f2a879",
+              "http://dummyimage.com/68x68/79d7f2",
+              "http://dummyimage.com/68x68/bef279"
+            ]
+          },
+          {
+            "clickUrl": "www.baidu.com",
+            "follows": 584180,
+            "name": "HomeFacial Pro",
+            "imgs": [
+              "http://dummyimage.com/68x68/f2a879",
+              "http://dummyimage.com/68x68/79d7f2",
+              "http://dummyimage.com/68x68/bef279"
+            ]
+          },
+          {
+            "clickUrl": "www.baidu.com",
+            "follows": 574948,
+            "name": "物业365",
+            "imgs": [
+              "http://dummyimage.com/68x68/f2a879",
+              "http://dummyimage.com/68x68/79d7f2",
+              "http://dummyimage.com/68x68/bef279"
+            ]
+          }
+        ]
+      },
+      "message": "成功",
+      "status": 222
+    },
+    "subList":{
+      "status": 222,
+      "message": "成功",
+      "data": {
+        "categoryList": [
+          {
+            "id": 10,
+            "name": "水果",
+            "img": "http://dummyimage.com/60x60/9779f2"
+          },
+          {
+            "id": 835,
+            "name": "生鲜",
+            "img": "http://dummyimage.com/60x60/7ef279"
+          },
+          {
+            "id": 839,
+            "name": "饼干蛋糕",
+            "img": "http://dummyimage.com/60x60/f279a1"
+          },
+          {
+            "id": 842,
+            "name": "坚果炒货",
+            "img": "http://dummyimage.com/60x60/79c5f2"
+          },
+          {
+            "id": 9,
+            "name": "休闲零食",
+            "img": "http://dummyimage.com/60x60/e8f279"
+          }
+        ],
+        "brandList": [
+          {
+            "id": 85,
+            "name": "良品铺子",
+            "img": "http://dummyimage.com/60x60/d879f2"
+          },
+          {
+            "id": 83,
+            "name": "周黑鸭",
+            "img": "http://dummyimage.com/60x60/79f2b5"
+          },
+          {
+            "id": 82,
+            "name": "来伊份",
+            "img": "http://dummyimage.com/60x60/f29179"
+          },
+          {
+            "id": 81,
+            "name": "五谷磨坊",
+            "img": "http://dummyimage.com/60x60/7983f2"
+          },
+          {
+            "id": 80,
+            "name": "龙润",
+            "img": "http://dummyimage.com/60x60/a7f279"
+          }
+        ]
+      }
+    }
+  },
+  "search":{
+    "list":{
+      "status": 200,
+      "message": "",
+      "lists": [
+        {
+          "id": 22700,
+          "name": "Jbxfw Vhce Jfzlpwn Vkylkhxxjr Mlypy",
+          "img": "http://dummyimage.com/320x320/f279ca",
+          "price": 89.5,
+          "isOut": true,
+          "isPostage": true
+        },
+        {
+          "id": 64759,
+          "name": "Ejmp Avxe Cyyycbq Bqqxl",
+          "img": "http://dummyimage.com/320x320/79edf2",
+          "price": 95.27,
+          "isOut": false,
+          "isPostage": false
+        },
+        {
+          "id": 31445,
+          "name": "Pxjp Cujiqwdu Bhrxmxdy Bnxsmm Dbbgxqsgf Vtooq",
+          "img": "http://dummyimage.com/320x320/f2d379",
+          "price": 25.93,
+          "isOut": false,
+          "isPostage": true
+        },
+        {
+          "id": 84808,
+          "name": "Ennzweoi Oichy Kqyq Vcfwhcixl Dypgnhmo Cmsdeh",
+          "img": "http://dummyimage.com/320x320/b079f2",
+          "price": 25.4,
+          "isOut": true,
+          "isPostage": false
+        },
+        {
+          "id": 13606,
+          "name": "Adwmlalyl Qsslvl Oqwxbxm",
+          "img": "http://dummyimage.com/320x320/79f28c",
+          "price": 79.4,
+          "isOut": false,
+          "isPostage": true
+        },
+        {
+          "id": 73999,
+          "name": "Kefb Iwwuov Rtowlk Levqkc Ihzf Lywt Hnpoc",
+          "img": "http://dummyimage.com/320x320/f27988",
+          "price": 25.48,
+          "isOut": true,
+          "isPostage": false
+        },
+        {
+          "id": 81836,
+          "name": "Jpqcm Lrhfdtvqe Dtns Eihvuckbl Zijs Uytfyyc",
+          "img": "http://dummyimage.com/320x320/79acf2",
+          "price": 78.2,
+          "isOut": false,
+          "isPostage": false
+        },
+        {
+          "id": 44238,
+          "name": "Unck Zfjivj Rmyfs Uqhgwoz Geabe",
+          "img": "http://dummyimage.com/320x320/cff279",
+          "price": 68.8,
+          "isOut": true,
+          "isPostage": true
+        }
+      ]
+    }
+  },
+  "goods":{
+    "details":{
+      "data": {
+        "imgs": [
+          "http://dummyimage.com/375x375/f2a879",
+          "http://dummyimage.com/375x375/79d7f2",
+          "http://dummyimage.com/375x375/bef279"
+        ],
+        "originalPrice": 530,
+        "postage": "免运费",
+        "price": 17,
+        "sales": 502,
+        "title": "寻找田野|最正宗的上海南汇8424 得奖最多奥运会指定西瓜1只/箱 9-11斤",
+        "storeName": "寻找田野",
+        "skuList": [
+          {
+            "lists": [
+              "1个",
+              "2个"
+            ],
+            "title": "净含量"
+          },
+          {
+            "lists": [
+              "1个",
+              "2个"
+            ],
+            "title": "个数"
+          }
+        ],
+        "remain": 195,
+        "identification": [
+          "企业认证",
+          "担保交易"
+        ],
+        "description": "<div class=\"js-components-container components-container\"> <div class=\"custom-richtext js-lazy-container js-view-image-list\"> <p><img data-origin-width=\"720\" data-origin-height=\"713\" class=\"js-richtext-img-lazy js-view-image-item\" src=\"https://img.yzcdn.cn/upload_files/2017/05/15/FhU7lMPonHtR8qP4zP4aIKRVkObr.jpg?imageView2/2/w/730/h/0/q/75/format/webp\" data-src=\"https://img.yzcdn.cn/upload_files/2017/05/15/FhU7lMPonHtR8qP4zP4aIKRVkObr.jpg!730x0.jpg\"> <img data-origin-width=\"720\" data-origin-height=\"494\" class=\"js-richtext-img-lazy js-view-image-item\" src=\"https://img.yzcdn.cn/upload_files/2017/05/15/FvYqk840X0ubXwFE6Nh0unihqIKm.jpg?imageView2/2/w/730/h/0/q/75/format/webp\" data-src=\"https://img.yzcdn.cn/upload_files/2017/05/15/FvYqk840X0ubXwFE6Nh0unihqIKm.jpg!730x0.jpg\"> <img data-origin-width=\"720\" data-origin-height=\"916\" class=\"js-richtext-img-lazy js-view-image-item\" src=\"https://img.yzcdn.cn/upload_files/2017/05/15/FvIfNYewmohf3b3V2yA_hr6whV-A.jpg?imageView2/2/w/730/h/0/q/75/format/webp\" data-src=\"https://img.yzcdn.cn/upload_files/2017/05/15/FvIfNYewmohf3b3V2yA_hr6whV-A.jpg!730x0.jpg\"> <img data-origin-width=\"720\" data-origin-height=\"656\" class=\"js-richtext-img-lazy js-view-image-item\" src=\"https://img.yzcdn.cn/upload_files/2017/05/15/FlYJPxbAgmkKjWtvLxwqjUMJHUG3.jpg?imageView2/2/w/730/h/0/q/75/format/webp\" data-src=\"https://img.yzcdn.cn/upload_files/2017/05/15/FlYJPxbAgmkKjWtvLxwqjUMJHUG3.jpg!730x0.jpg\"> <img data-origin-width=\"720\" data-origin-height=\"513\" class=\"js-richtext-img-lazy js-view-image-item\" src=\"https://img.yzcdn.cn/upload_files/2017/05/15/FmpaiyW8GbpV2I2QKwm7stoRQkOJ.jpg?imageView2/2/w/730/h/0/q/75/format/webp\" data-src=\"https://img.yzcdn.cn/upload_files/2017/05/15/FmpaiyW8GbpV2I2QKwm7stoRQkOJ.jpg!730x0.jpg\"> <img data-origin-width=\"720\" data-origin-height=\"691\" class=\"js-richtext-img-lazy js-view-image-item\" src=\"https://img.yzcdn.cn/upload_files/2017/05/15/Fs5rqsKzMe7qIHhuQAqyM1lcjmfB.jpg?imageView2/2/w/730/h/0/q/75/format/webp\" data-src=\"https://img.yzcdn.cn/upload_files/2017/05/15/Fs5rqsKzMe7qIHhuQAqyM1lcjmfB.jpg!730x0.jpg\"> <img data-origin-width=\"720\" data-origin-height=\"531\" class=\"js-richtext-img-lazy js-view-image-item\" src=\"https://img.yzcdn.cn/upload_files/2017/05/15/Foor6_Ipc-Lo9eOX_H_a8g4kWPRW.jpg?imageView2/2/w/730/h/0/q/75/format/webp\" data-src=\"https://img.yzcdn.cn/upload_files/2017/05/15/Foor6_Ipc-Lo9eOX_H_a8g4kWPRW.jpg!730x0.jpg\"> <img data-origin-width=\"720\" data-origin-height=\"932\" class=\"js-richtext-img-lazy js-view-image-item\" src=\"https://img.yzcdn.cn/upload_files/2017/05/15/FuuNBFbA_vMYmI6FFbNOemmDX9bd.jpg?imageView2/2/w/730/h/0/q/75/format/webp\" data-src=\"https://img.yzcdn.cn/upload_files/2017/05/15/FuuNBFbA_vMYmI6FFbNOemmDX9bd.jpg!730x0.jpg\"> <img data-origin-width=\"720\" data-origin-height=\"707\" class=\"js-richtext-img-lazy js-view-image-item\" src=\"https://img.yzcdn.cn/upload_files/2017/05/15/FotgIfOUlMtvhtH0dhRLlmpKJLv7.jpg?imageView2/2/w/730/h/0/q/75/format/webp\" data-src=\"https://img.yzcdn.cn/upload_files/2017/05/15/FotgIfOUlMtvhtH0dhRLlmpKJLv7.jpg!730x0.jpg\"></p> </div> <div class=\"price-intro\"> <h4>划线价格说明<i class=\"icon-arrow\"></i></h4> <p>划线价格：划线的价格可能是商品的专柜价、吊牌价、正品零售价、指导价、曾经展示过的销售价等，仅供您参考。</p> <p>未划线价格：未划线的价格是商品的销售标价，具体的成交价格可能因会员使用优惠券、积分等发生变化，最终以订单结算价格为准。 </p> <p>*此说明仅当出现价格比较时有效。若这件商品针对划线价格进行了特殊说明，以特殊说明为准。</p> </div> </div>"
+      },
+      "message": "",
+      "status": 200
+    },
+    "deal":{
+      "data": {
+        "lists": [
+          {
+            "buyer": "尹艳",
+            "num": 5,
+            "time": "03:01:30"
+          },
+          {
+            "buyer": "阎秀兰",
+            "num": 5,
+            "time": "15:34:57"
+          },
+          {
+            "buyer": "汤静",
+            "num": 4,
+            "time": "03:11:16"
+          }
+        ]
+      },
+      "status": 200,
+      "message": ""
+    },
+    "evaluation":{
+      "message": "",
+      "status": 200,
+      "data": {}
+    }
+  },
+  "cart":{
+    "add":{
+      "status": 200,
+      "message": ""
+    },
+    "update":{
+      "status": 200,
+      "message": ""
+    },
+    "list":{
+      "status": 200,
+      "message": "",
+      "cartList": [
+        {
+          "shopTitle": "寻找田野",
+          "shopId": 75647,
+          "goodsList": [
+            {
+              "id": 75741,
+              "img": "http://dummyimage.com/90x90/7df279",
+              "number": 6,
+              "price": 113,
+              "sku": "全网通，玫瑰金，3+32G",
+              "title": "VIVO-Y66 全网通/移动版 3+32GB"
+            },
+            {
+              "id": 38907,
+              "img": "http://dummyimage.com/90x90/f279a0",
+              "number": 2,
+              "price": 14,
+              "sku": "全网通，香槟金，3+32G",
+              "title": "VIVO-Y66 全网通/移动版 3+32GB"
+            },{
+              "id": 70100,
+              "img": "http://dummyimage.com/90x90/f29379",
+              "number": 2,
+              "price": 27,
+              "sku": "全网通，玫瑰金，3+32G",
+              "title": "VIVO-Y66 全网通/移动版 3+32GB"
+            },
+            {
+              "id": 87565,
+              "img": "http://dummyimage.com/90x90/7982f2",
+              "number": 2,
+              "price": 61,
+              "sku": "全网通，香槟金，3+32G",
+              "title": "VIVO-Y66 全网通/移动版 3+32GB"
+            }
+          ]
+        },
+        {
+          "shopTitle": "猫咪森林",
+          "shopId": 97497,
+          "goodsList": [
+            {
+              "id": 31128,
+              "img": "http://dummyimage.com/90x90/79c3f2",
+              "number": 3,
+              "price": 15,
+              "sku": "全网通，玫瑰金，3+32G",
+              "title": "VIVO-Y66 全网通/移动版 3+32GB"
+            },
+            {
+              "id": 32627,
+              "img": "http://dummyimage.com/90x90/8cf279",
+              "number": 7,
+              "price": 53,
+              "sku": "全网通，香槟金，3+32G",
+              "title": "VIVO-Y66 全网通/移动版 3+32GB"
+            },
+            {
+              "id": 76861,
+              "img": "http://dummyimage.com/90x90/f279af",
+              "number": 8,
+              "price": 61,
+              "sku": "全网通，玫瑰金，3+32G",
+              "title": "VIVO-Y66 全网通/移动版 3+32GB"
+            }
+          ]
+        },
+        {
+          "shopTitle": "老爹果园",
+          "shopId": 96151,
+          "goodsList": [
+            {
+              "id": 17244,
+              "img": "http://dummyimage.com/90x90/e7f279",
+              "number": 4,
+              "price": 118,
+              "sku": "全网通，香槟金，3+32G",
+              "title": "VIVO-Y66 全网通/移动版 3+32GB"
+            },
+            {
+              "id": 46802,
+              "img": "http://dummyimage.com/90x90/da79f2",
+              "number": 9,
+              "price": 44,
+              "sku": "全网通，玫瑰金，3+32G",
+              "title": "VIVO-Y66 全网通/移动版 3+32GB"
+            },
+            {
+              "id": 80767,
+              "img": "http://dummyimage.com/90x90/79f2b6",
+              "number": 6,
+              "price": 120,
+              "sku": "全网通，香槟金，3+32G",
+              "title": "VIVO-Y66 全网通/移动版 3+32GB"
+            }
+          ]
+        }
+      ]
+    },
+    "reduce":{
+      "status": 200,
+      "message": ""
+    },
+    "remove":{
+      "message": "",
+      "status": 200
+    },
+    "mrremove":{
+      "status": 200,
+      "message": ""
+    }
+  },
+  "address":{
+    "add":{
+      "status": 200,
+      "message": ""
+    },
+    "remove":{
+      "status": 200,
+      "message": ""
+    },
+    "list":{
+      "status": 200,
+      "lists": [
+        {
+          "address": "肯德基",
+          "cityName": "杭州",
+          "cityValue": "330100",
+          "districtValue": "330102",
+          "districtName": "上城区",
+          "id": 40687,
+          "isDefault": true,
+          "name": "胡静",
+          "provinceValue": 330000,
+          "provinceName": "浙江省",
+          "tel": 8808208820
+        },
+        {
+          "address": "金拱门",
+          "cityName": "杭州",
+          "cityValue": "330100",
+          "districtValue": "330103",
+          "districtName": "下城区",
+          "id": 73187,
+          "isDefault": false,
+          "name": "王娜",
+          "provinceValue": 330000,
+          "provinceName": "浙江省",
+          "tel": 8808208820
+        },
+        {
+          "address": "肯德基",
+          "cityName": "杭州",
+          "cityValue": "330100",
+          "districtValue": "330104",
+          "districtName": "江干区",
+          "id": 39786,
+          "isDefault": false,
+          "name": "任涛",
+          "provinceValue": 330000,
+          "provinceName": "浙江省",
+          "tel": 8808208820
+        }
+      ]
+    },
+    "update":{
+      "message": "",
+      "status": 200
+    },
+    "setDefault":{
+      "status": 200,
+      "message": ""
+    }
+  }
+}
