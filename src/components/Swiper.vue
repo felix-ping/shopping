@@ -41,6 +41,10 @@ export default {
 </script>
 
 <style>
+    .swiper-container{
+        width: 100vw;
+        height: 31.32vh;
+    }
     .swiper-container img{
         width:100%;
         height: 100%;

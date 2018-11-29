@@ -12,6 +12,8 @@ import url from 'js/api.js';
 import mixin from 'js/mixin.js';
 import qs from 'qs';
 import Swiper from 'components/Swiper.vue';
+import VueResource from 'vue-resource'
+Vue.use(VueResource)
 
 let {id}=qs.parse(location.search.substr(1))
 new Vue({
@@ -36,8 +38,8 @@ new Vue({
 	},
 	methods:{
 		getDetails(){
-			axios.post(url.details,{id}).then(res=>{
-				this.detailsList=res.data.data
+			this.$http.get('static/data.json').then(res=>{
+				this.detailsList=res.data.details.data
 				this.bannerLists=[]
 				this.detailsList.imgs.forEach(item=>{
 					this.bannerLists.push({
@@ -54,8 +56,8 @@ new Vue({
 			}
 		},
 		getDeal(){
-			axios.post(url.deal).then(res=>{
-				this.deal=res.data.data.lists
+			this.$http.get('static/data.json').then(res=>{
+				this.deal=res.data.deal.data.lists
 			})
 		},
 		chooseSku(type){
@@ -75,11 +77,8 @@ new Vue({
 			
 		},
 		addCart(){
-			axios.post(url.addCart,{
-				id,
-				number:this.skuNum
-			}).then(res=>{
-				if(res.data.status===200){
+			this.$http.get('static/data.json').then(res=>{
+				if(res.data.cart.add.status===200){
 					this.showSku=false
 					this.isAddCart=true
 					this.showAddMessage=true
