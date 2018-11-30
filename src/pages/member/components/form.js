@@ -12,6 +12,9 @@ export default{
       address:'',
       id:'',
       type:'',
+      provinceName:'',
+      cityName:'',
+      districtName:'',
       instance:'',
       addressData:require('js/address.json'),
       cityList:null,
@@ -28,6 +31,9 @@ export default{
       let addr=this.instance;
       this.provinceValue=parseInt(addr.provinceValue);
       this.name=addr.name;
+      this.provinceName=addr.provinceName
+      this.cityName=addr.cityName
+      this.districtName=addr.districtName
       this.id=addr.id;
       this.tel=addr.tel;
       this.address=addr.address;
@@ -41,8 +47,8 @@ export default{
   methods:{
     //这里需要进行非空和合法性校验
     save(){
-      let {name,tel,provinceValue,cityValue,districtValue,address}=this
-      let data={name,tel,provinceValue,cityValue,districtValue,address}
+      let {name,tel,provinceValue,cityValue,districtValue,address,provinceName,cityName,districtName}=this
+      let data={name,tel,provinceValue,cityValue,districtValue,address,provinceName,cityName,districtName}
       if(this.type==='add'){
         // Address.add(data).then(res=>{
         //   this.$router.go(-1)})
@@ -52,7 +58,6 @@ export default{
       if(this.type==='edit'){
         //这里容易遗漏
         data.id=this.id 
-        console.log(data.id)
         // Address.update(data).then(res=>{
         //   this.$router.go(-1)
         // })
@@ -77,7 +82,7 @@ export default{
   },
   watch:{
     lists:{
-      handler(){
+      handler(){  //这特么是啥
         this.$router.go(-1)
       },
       deep:true,
@@ -85,11 +90,8 @@ export default{
     },
     provinceValue(val){
       if(val==='-1'){
-        console.log(-1,val)
         return
       }
-      console.log(typeof val)
-      console.log(val,11111)
       let list=this.addressData.list
       let index=list.findIndex(item=>{
         return item.value===val

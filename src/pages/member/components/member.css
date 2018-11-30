@@ -1,7 +1,7 @@
 .block-item {
   position: relative;
   display: block;
-  padding: 10px;
+  padding: 20px;
   line-height: 1.5;
   border: 0;
   -webkit-border-image: url("https://b.yzcdn.cn/v2/image/wap/border-line-2.png") 2 stretch;
@@ -953,4 +953,19 @@ only screen and (min-device-pixel-ratio: 1.5) {
   margin-top: -10px;
   background: url("/v2/image/wap/icon_check_circle_checked@2x.png") center center no-repeat;
   background-size: 100% auto
+}
+
+
+.block-item.js-address-item.address-item{
+  padding-left: 10px;
+}
+.block-item.js-address-item.address-item:nth-child(){
+  padding: 5px 0;
+}
+
+.address-item-default{
+  color: red;
+}
+.address-edit{
+  color: blue;
 }

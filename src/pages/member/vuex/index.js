@@ -1,7 +1,11 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import Address from 'js/addressService.js';
+// import Address from 'js/addressService.js';
+import VueResource from 'vue-resource'
+Vue.use(VueResource)
 Vue.use(Vuex)
+
+
 
 const store=new Vuex.Store({
   state:{
@@ -38,28 +42,29 @@ const store=new Vuex.Store({
   },
   actions:{
     getLists({commit}){
-      Address.list().then(res=>{
-        commit('init',res.data.lists)
+      Vue.http.get('static/data.json').then(res=>{
+        commit('init',res.data.address.list.lists)
       })
     },
     //模拟添加id,instance最好是后台返回.
     addAction({commit},instance){
-      Address.add(instance).then(res=>{
+      Vue.http.get('static/data.json').then(res=>{
         commit('add',instance)
       })
     },
     removeAction({commit},id){
-      Address.remove(id).then(res=>{
+      Vue.http.get('static/data.json').then(res=>{
         commit('remove',id)
       })
     },
     updateAction({commit},instance){
-      Address.update(instance).then( res=>{
+      Vue.http.get('static/data.json').then( res=>{
+        console.log(instance,1)
         commit('update',instance)
       })
     },
     setDefaultAction({commit},id){
-      Address.setdefault(id).then(res=>{
+      Vue.http.get('static/data.json').then(res=>{
         commit('setDefault',id)
       })
     }
