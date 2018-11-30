@@ -24,9 +24,7 @@ new Vue({
     methods:{
         getTopLists(){
             this.$http.get('static/data.json').then(res=>{
-                console.log(res)
                 this.topLists=res.data.category.topList.lists
-                console.log(this.topLists)
             }).catch(err=>{console.log(err)})
         },
         getSubList(index,id){
@@ -36,12 +34,13 @@ new Vue({
             }else{
                 this.$http.get('static/data.json').then(res=>{
                     this.listData=res.data.category.subList.data   
-                }).catch(err=>{222,console.log(err)})
+                }).catch(err=>{console.log(err)})
             }            
         },
         getRank(){
             this.$http.get('static/data.json').then(res=>{
                 this.rankData=res.data.category.rank.data
+                console.log(this.rankData)
             }).catch(err=>{console.log(err)})
         },
         toSearch(list){

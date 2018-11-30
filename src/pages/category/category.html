@@ -70,7 +70,8 @@
         </div>
         <div class="class-category">
           <div id="scroll-main-wrap" class="main-content">
-            <div id="scroll-main-content" class="js-main-content inner-content" style="height: 943px; transform: translate3d(0px, 0px, 0px);"v-if='topIndex===0 && rankData'>
+            <div id="scroll-main-content" class="js-main-content inner-content" 
+            style="height: 943px; transform: translate3d(0px, 0px, 0px);"v-if='topIndex===0 && rankData'>
               <div class="hot-wrap">
                 <div class="hot-goods">
                   <div class="hot-title">
@@ -105,12 +106,12 @@
                     <li class="shop-item" v-for='(list,index) in rankData.hotShops'>
                       <div class="shop-title">
                         <span class="badge">{{index+1}}</span>
-                        <a :href='list.clickUrl'>{{list.name}}</a>
+                        <a :href='"search.html?follows="+list.follows'>{{list.name}}</a>
                         <span class="follows"> / 关注度: {{list.follows}}</span>
                       </div>
                       <ul class="shop-images" >
                         <li v-for='item in list.imgs'>
-                          <a :href='list.clickUrl'><img :src='item'></a>
+                          <a :href='"search.html?id="+list.follows'><img :src='item'></a>
                         </li>
                       </ul>
                     </li>
@@ -128,7 +129,8 @@
                 </div>
               </div>
             </div>
-            <div id="scroll-main-content" class="js-main-content inner-content" style="height: 534px; transform: translate3d(0px, 0px, 0px);"v-if='topIndex>0 && listData'>
+            <div id="scroll-main-content" class="js-main-content inner-content"
+              style="height: 534px; transform: translate3d(0px, 0px, 0px);"v-if='topIndex>0 && listData'>
               <h3 class="category-title">热门品牌 </h3>
               <ul class="category-content">
                 <li class="category-item js-category-item" data-item-id="85" data-item-name="良品铺子"
