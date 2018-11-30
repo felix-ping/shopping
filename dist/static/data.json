@@ -114,14 +114,17 @@
     "banner":{
       "lists": [
         {
+          "id": 55677,
           "clickUrl": "prospero://hsdzj.fj/sghnif",
           "img": "http://dummyimage.com/375x180/f27979"
         },
         {
+          "id": 55377,
           "clickUrl": "rlogin://lskjh.lu/xmnimfd",
           "img": "http://dummyimage.com/375x180/799cf2"
         },
         {
+          "id": 11677,
           "clickUrl": "nntp://whmlajaj.io/pfsjrmv",
           "img": "http://dummyimage.com/375x180/c0f279"
         }
@@ -591,28 +594,28 @@
         },
         {
           "address": "金拱门",
-          "cityName": "杭州",
+          "cityName": "北京",
           "cityValue": "330100",
           "districtValue": "330103",
-          "districtName": "下城区",
+          "districtName": "海淀区",
           "id": 73187,
           "isDefault": false,
           "name": "王娜",
           "provinceValue": 330000,
-          "provinceName": "浙江省",
+          "provinceName": "北京",
           "tel": 8808208820
         },
         {
-          "address": "肯德基",
-          "cityName": "杭州",
+          "address": "麦当劳",
+          "cityName": "广州",
           "cityValue": "330100",
           "districtValue": "330104",
-          "districtName": "江干区",
+          "districtName": "白云区",
           "id": 39786,
           "isDefault": false,
           "name": "任涛",
           "provinceValue": 330000,
-          "provinceName": "浙江省",
+          "provinceName": "广东省",
           "tel": 8808208820
         }
       ]
